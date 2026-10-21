@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>地理院ベクトル地図 Maki アイコン置き換えビューア</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <link href="https://unpkg.com/maplibre-gl@6/dist/maplibre-gl.css" rel="stylesheet" />
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .feature-popup {
+      max-height: 300px;
+      overflow-y: auto;
+      font-size: 12px;
+    }
+
+    .feature-info+.feature-info {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid #ccc;
+    }
+
+    .feature-info h3 {
+      margin: 0 0 2px;
+      font-size: 13px;
+    }
+
+    .feature-info p {
+      margin: 0 0 4px;
+      color: #666;
+    }
+
+    .feature-info table {
+      border-collapse: collapse;
+    }
+
+    .feature-info th,
+    .feature-info td {
+      padding: 1px 6px 1px 0;
+      text-align: left;
+      vertical-align: top;
+      word-break: break-all;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
